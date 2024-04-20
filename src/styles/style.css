@@ -47,6 +47,7 @@ body{
     align-items: center;
     justify-content: center;
     border-radius: 20px;
+    margin: 50px 20px;
 }
 
 #box-orange{
@@ -121,4 +122,27 @@ button{
 
 #green{
     color: var(--VeryDarkCyan);
+}
+
+@media screen and (max-width: 1000px){
+
+    body{
+        height: auto;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .box{
+        height: 450px;
+    }
+
+    #box-orange{
+        border-radius: 10px 10px 0 0;
+    }
+    
+    #box-green{
+        border-radius: 0 0 10px 10px;
+    }
 }
